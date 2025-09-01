@@ -4,6 +4,73 @@ html, body, div, h1, h2, h3, h4, h5, h6, table, p, a, ul, li {
     border: 0;
 }
 
+body {
+    display: flex; 
+    flex-direction: column;
+    background-color: #121212;
+    padding: 1rem;
+    align-items: center;
+}
+
+#landing-img {
+    width: 50vw;
+    position: relative;
+    z-index: 2;
+}
+
+#intro {
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+}
+
+#intro h3 {
+    color: white;
+    font-family: Staatliches;
+    font-size: 2rem;
+}
+
+#intro a {
+    text-align: center;
+    text-decoration: none;
+    animation: fadeIn 3s ease;
+}
+
+.mobile-title {
+    font-family: Staatliches;
+    font-size: 12vw;
+    color: white;
+    margin-bottom: 2rem;
+
+}
+
+.desktop-title {display: none;}
+
+#social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    color:rgb(17, 240, 240);
+}
+
+#social-links {
+    display: flex;
+    gap:60px;
+    margin-top: 2rem;
+    justify-content: center;
+    height: 5vh;
+    padding: 1rem;
+}
+
+#circle1 {
+    position: absolute;
+    border-radius: 50%;
+    border:5px solid rgb(17, 240, 240);
+    background: transparent;
+    width: 50vw;
+    height: 50vw;
+    z-index: 1
+}
 @media screen and (min-width: 1080px){
 
 
@@ -20,23 +87,23 @@ html {
 }
 
 body {
-    display: flex;
+    flex-direction: row;
     height: 100%;
-    background-color: #121212;
     margin: auto 5rem;
+    padding: 0;
     animation: fadeIn 2s ease;
-
 }
 
 #intro {
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    
     width: 75vw;
 }
 
-#intro h1 {
+
+.mobile-title {
+    display: none;
+}
+.desktop-title {
+    display: block;
     color: white;
     font-family: Staatliches;
     font-size: 8vw;
@@ -49,9 +116,6 @@ body {
 }
 
 #intro h3 {
-    color: white;
-    font-family: Staatliches;
-   
     font-size: 5rem;
 }
 
@@ -87,13 +151,17 @@ body {
  
 #circles {align-content: center; opacity: .8;}
 
+
+
+
 #social-links {
     display: flex;
     gap:60px;
     justify-content: center;
     height: 5vh;
     padding: 1rem;
-   
+    border: 1px solid white;
+    
     
 }
 
