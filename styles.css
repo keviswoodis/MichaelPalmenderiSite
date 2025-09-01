@@ -1,0 +1,132 @@
+html, body, div, h1, h2, h3, h4, h5, h6, table, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@media screen and (min-width: 1080px){
+
+
+#landing-img {
+    position: relative;
+    z-index: 2;
+    width: 25vw;
+    margin: 0;
+    
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    background-color: #121212;
+    margin: auto 5rem;
+    animation: fadeIn 2s ease;
+
+}
+
+#intro {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    
+    width: 75vw;
+}
+
+#intro h1 {
+    color: white;
+    font-family: Staatliches;
+    font-size: 8vw;
+    margin-top: 0;
+    border: white 1px solid;
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+#intro h3 {
+    color: white;
+    font-family: Staatliches;
+   
+    font-size: 5rem;
+}
+
+#intro a {
+    text-decoration: none;
+    animation: fadeIn 3s ease;
+}
+
+#intro h3:hover {
+    color: rgb(17, 240, 240);
+}
+
+#circle1 {
+    position: absolute;
+    border-radius: 50%;
+    border: 10px solid rgb(17, 240, 240);
+    background: transparent;
+    width: 25vw;
+    height: 25vw;
+    z-index: 1;
+}
+
+#circle2 {
+    position: absolute;
+    border-radius: 50%;
+    border: 10px solid rgb(255, 255, 255);
+    background: transparent;
+    width: 29vw;
+    height: 29vw;
+    z-index: 0;
+}
+
+ 
+#circles {align-content: center; opacity: .8;}
+
+#social-links {
+    display: flex;
+    gap:60px;
+    justify-content: center;
+    height: 5vh;
+    padding: 1rem;
+   
+    
+}
+
+#social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    
+}
+
+#social-links a:hover {
+    color:rgb(17, 240, 240);
+}
+/* div with just the image of Michael and the circle */
+#pic-n-circles {
+   
+  
+    
+}
+
+/*div that contains the pic n circles and the dates table*/
+#img-dates {
+    display: flex;
+    color: white;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+}/*end 1080p viewportstyling */
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
